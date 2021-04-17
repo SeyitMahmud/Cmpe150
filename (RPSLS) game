@@ -1,0 +1,39 @@
+
+player1, player2 = input().split()
+# DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+if (player1=="scissors" and player2=="paper") or (player1=="scissors" and player2=="lizard") :
+    result=1
+elif (player1=="paper" or player1=="lizard") and (player2=="scissors"):
+    result=2
+#
+elif (player1=="paper" and player2=="rock") or (player1=="paper" and player2=="spock") :
+    result=1
+elif (player1=="rock" or player1=="spock") and (player2=="paper"):
+    result=2
+#
+elif (player1=="rock" and player2=="lizard") or (player1=="rock" and player2=="scissors") :
+    result=1
+elif (player1=="lizard" or player1=="scissors") and (player2=="rock"):
+    result=2
+#
+elif (player1=="lizard" and player2=="spock") or (player1=="lizard" and player2=="paper") :
+    result=1
+elif (player1=="spock" or player1=="paper") and (player2=="lizard"):
+    result=2
+#
+elif (player1=="spock" and player2=="rock") or (player1=="spock" and player2=="scissors") :
+    result=1
+elif (player1=="rock" or player1=="scissors") and (player2=="spock"):
+    result=2
+#
+elif (player1=="paper" and player2=="paper") or (player1=="scissors" and player2=="scissors")  or (player1=="rock" and player2=="rock") or (player1=="lizard" and player2=="lizard") or (player1=="spock" and player2=="spock") :
+    result=0
+
+# DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+if result == 0:
+    print("It's a tie!")
+elif result == 1:
+    print("Player 1 wins!", player1, "defeats", player2)
+elif result == 2:
+    print("Player 2 wins!", player2, "defeats", player1)
+
